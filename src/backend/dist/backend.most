@@ -1,0 +1,47 @@
+// Version: 3.0.0
+type List__415060402<T> = List__790383201<T>;
+type List__790383201<T> =
+  {
+    var blockIndex : Nat__490723111;
+    var blocks : [var [var ?T]];
+    var elementIndex : Nat__490723111
+  };
+type Nat__490723111 = Nat__920180692;
+type Nat__920180692 = Nat;
+type OldPredictionRecord__707744454 =
+  {
+    fertilizerSuggestion : Text;
+    generalGuidance : Text;
+    humidity : Float;
+    id : Text;
+    plantingTime : Text;
+    rainfall : Float;
+    result : Text;
+    soilType : Text;
+    temperature : Float;
+    timestamp : Int
+  };
+type PredictionInput__482842556 =
+  {humidity : Float; rainfall : Float; soilType : Text; temperature : Float};
+type PredictionRecord__825898595 =
+  {
+    fertilizerSuggestion : Text;
+    generalGuidance : Text;
+    id : Nat;
+    input : PredictionInput__482842556;
+    owner : Principal;
+    plantingTime : Text;
+    result : Text;
+    timestamp : Int
+  };
+actor ({
+  in var nextId : Nat;
+  in predictions : List__415060402<OldPredictionRecord__707744454>
+}, {
+  stable predictions :
+    {
+      var blockIndex : Nat__490723111;
+      var blocks : [var [var ?PredictionRecord__825898595]];
+      var elementIndex : Nat__490723111
+    }
+}) ;

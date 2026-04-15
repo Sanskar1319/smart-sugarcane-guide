@@ -1,0 +1,23 @@
+type PredictionRecord = 
+ record {
+   fertilizerSuggestion: text;
+   generalGuidance: text;
+   id: nat;
+   input: PredictionInput;
+   owner: principal;
+   plantingTime: text;
+   result: text;
+   timestamp: int;
+ };
+type PredictionInput = 
+ record {
+   humidity: float64;
+   rainfall: float64;
+   soilType: text;
+   temperature: float64;
+ };
+service : {
+  deletePrediction: (id: nat) -> (bool);
+  getPredictions: () -> (vec PredictionRecord) query;
+  savePrediction: (input: PredictionInput) -> (PredictionRecord);
+}

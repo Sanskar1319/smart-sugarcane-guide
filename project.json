@@ -1,0 +1,27 @@
+{
+  "overview": "A mobile-optimized web app for Indian sugarcane farmers featuring AI-powered crop suitability predictions, detailed farming guides, prediction history, and full English/Marathi bilingual support with Material Design aesthetics.",
+  "features": [
+    "Splash screen with green gradient and auto-navigation",
+    "Login and Register screens with form validation",
+    "Home dashboard with weather banner and navigation cards",
+    "Prediction form for temperature, humidity, rainfall, and soil type",
+    "Color-coded suitability results with planting and fertilizer recommendations",
+    "Detailed sugarcane farming guide with expandable sections",
+    "Prediction history with search and filter",
+    "Profile screen with edit and logout",
+    "English and Marathi language support",
+    "Authorization-based protected routes"
+  ],
+  "category": "agriculture",
+  "tags": [
+    "farming",
+    "sugarcane",
+    "agriculture",
+    "prediction",
+    "mobile",
+    "marathi",
+    "material-design",
+    "crop-management"
+  ],
+  "last_updated": "2026-04-15T13:26:10.089Z"
+}
